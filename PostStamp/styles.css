@@ -1,0 +1,123 @@
+body{
+    font-family: 'SF Pro' sans-serif;
+    font-weight:900;
+  position: relative;
+}
+
+.welcome-text{
+    font-size:145px;
+    align-items: center;
+  animation: blurInOut 4s ;
+  margin-left: 70px;
+}
+
+  @keyframes blurInOut {
+    0%, 100% { filter: blur(0); }
+    50% { filter: blur(50px); }
+  }
+  h1{
+    margin-left: 300px;
+  }
+  h4{
+    margin-left: 300px;
+  }
+section{
+
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+
+}
+
+#sec1{
+    background-image: url(sec1.jpg);
+    background-size: cover;
+}
+
+#sec2{
+    background-image: url(ALT.jpg);
+    background-size: cover;
+}
+
+
+.gallery{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+
+    overflow-x: scroll; /* Add horizontal scrolling */
+    width: 100%; /* Adjust width as needed */
+}
+
+.gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+
+    flex-shrink: 0;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* Define keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /* Apply animation to the element */
+  #search-box {
+    /* background: linear-gradient(to right, #e4d574, #ebd48a, #e9c37c, #a7e8ff, #f5c78e); */
+    background-image: url(sec1.jpg);
+    background-size: 500% auto;
+    animation: gradientAnimation 200s linear infinite;
+  }
+
+
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+li:hover {
+    background-color: #f4f4f4;
+}

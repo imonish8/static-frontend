@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix Watchlist</title>
+    <link rel="icon" type="image/png" href="mn8.png">
+</head>
+<body>
+    <header>
+        <h1>MN8's Netflix Watchlist</h1>
+       <a href="https://monishnule.dev" target="_blank"><img src="mn8.png" alt="Netflix Logo" class="logo" ></a>  <!-- Logo image -->
+    </header>
+
+    <div class="container">
+        <ul>
+            <li>The Haunting of Hill House</li>
+            <li>The Ritual</li>
+            <li>Gerald's Game</li>
+            <li>The Babadook</li>
+            <li>Hush</li>
+            <li>1922</li>
+            <li>The Conjuring</li>
+            <li>Snowden</li>
+            <li>Stranger things 1-3</li>
+            <li>Sex Education 1-4</li>
+            <li>Death Note</li>
+            <li>BirdBox</li>
+            <li>The Order</li>
+            <!-- Add more movies to the list as needed -->
+        </ul>
+    </div>
+
+    <div class="form">
+        <h1>Taste of your Netflix</h1>
+        <form action="send_message.php" method="post">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(35, 82%, 57%, 0.85), hsl(227, 82%, 49%)); /* Gradient background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradientMove 2s linear infinite;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% opacity */
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* Ensure gradient is positioned relative to the content */
+    z-index: 1; /* Ensure content is above the gradient */
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: beige; /* Ensure text is visible */
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center align social links */
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%; /* Starting position */
+    }
+    100% {
+        background-position: 100% 50%; /* Ending position */
+    }
+}
